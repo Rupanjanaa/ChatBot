@@ -1,12 +1,58 @@
-# React + Vite
+# React-Based Customer Chat Application with AI Copilot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive, component-driven chat interface developed using React. It simulates a customer support messaging system, enabling interaction between a customer and an agent. In addition to the standard messaging workflow, the application includes an integrated AI Copilot designed to enhance support efficiency through automated suggestions, drafting, summarization, and sentiment analysis.
 
-Currently, two official plugins are available:
+The design emphasizes usability, modularity, and extensibility, making it suitable for integration into customer service platforms or internal support tools.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application consists of three primary sections:
+1. **Sidebar** – Displays a list of conversations or contacts.
+2. **Chat Window** – Facilitates real-time communication between a customer and an agent.
+3. **AI Copilot Panel** – Offers AI-powered utilities to assist agents during conversations.
+
+Each section is independently managed through modular React components, ensuring maintainability and separation of concerns.
+
+---
+
+## Key Features
+
+### Chat Functionality
+- Real-time message rendering with alignment based on sender (user or agent).
+- Timestamp display for all messages.
+- Scrollable chat history with responsive layout.
+- Input area for composing and sending new messages, with `Enter` key support.
+
+### AI Copilot Integration
+- Accessible side panel that supports AI-driven interaction.
+- Predefined quick actions:
+  - Generate a draft reply to the current conversation.
+  - Suggest follow-up responses.
+  - Summarize the ongoing chat.
+  - Analyze sentiment based on user tone.
+- Accepts manual queries for customized AI feedback.
+- Integrates with the chat thread for continuity and relevance.
+
+### User Interface Design
+- Clean, modern UI optimized for usability and readability.
+- Structured layout separating contacts, active conversations, and AI support tools.
+- Styled components with consistent behavior across screens.
+
+---
+
+## Technical Stack
+
+### Front-End
+- React – Core library used to build the component-based UI.
+- Vite – Development server and build tool for fast development and optimized production builds.
+- JavaScript (ES6+) – Business logic and state management.
+- HTML5 / JSX – Markup structure for React components.
+- CSS (Modular / Scoped) – Component-specific styling with responsive and theme-aware layouts.
+- Lucide React – Icon library used for UI controls and interactions.
+
+---
+
+Website deployed @ https://rupanjanaa.github.io/ChatBot/
+
